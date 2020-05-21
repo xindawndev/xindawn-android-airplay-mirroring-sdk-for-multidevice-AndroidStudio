@@ -112,7 +112,7 @@ void H264MediaCodec::setSpsPpSData(char *buffer, int buflen)
 		m_width  = spsWidth;
 		m_height = spsHeight;
 		
-	    InitCodec();
+		InitCodec();
 
 		LOGI("width = %d height =%d ", m_width,m_height);
 
