@@ -13,7 +13,7 @@ add_library(
     				XinDawnMultiScreen.cpp
             )
 
-set(libdir ${PROJECT_SOURCE_DIR}/AirPlay)
+set(libdir ${PROJECT_SOURCE_DIR}/AirPlay/${ANDROID_ABI})
 
 
-target_link_libraries(jniinterface log ${libdir}/libAirPlay.so ${libdir}/libmdnsserver.so ${libdir}/libShairplay.so android mediandk)
+target_link_libraries(jniinterface log ${libdir}/libAirPlay.so  ${libdir}/libShairplay.so android mediandk)
